@@ -1,0 +1,21 @@
+문서 객체 모델(The Document Object Model) html 문서의 프로그래밍 인터페이스
+문서의 구조화된 표현을 제공한다. 웹 페잊도 일종의 문서이다.
+
+https://www.w3.org/DOM/
+https://dom.spec.whatwg.org/
+
+예를 들어, 표준 DOM 에서는 문서 안에서 모든 <P> elements 에 대한 list 를 리턴하는 getElementsByTagName method 를 정의하고 있다:
+
+var paragraphs = document.getElementsByTagName("P");
+// paragraphs[0] is the first <p> element
+// paragraphs[1] is the second <p> element, etc.
+alert(paragraphs[0].nodeName);
+웹 페이지를 수정하거나 생성하는데 사용되는 모든 property, method, event 들은 
+objects 로 구성된다. 예를 들어 document object 는 document 자체를 의미하며, table object 는 
+HTML table 에 접근하기 위한 HTMLTableElement DOM 인터페이스를 구현한 것이다. 이 문서는 Gecko 
+기반의 브라우저에서 구현된 DOM 에 대한 object-by-object reference 를 제공한다.
+
+https://developer.mozilla.org/ko/docs/Gecko_DOM_Reference/%EC%86%8C%EA%B0%9C
+
+2018.12.17
+DOM이란 자바를 예를 들면 기본 class 구조를 말하는 것이 아닐까 싶다.
