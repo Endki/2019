@@ -14,3 +14,54 @@
 	<li></li>
 	<li></li>
 </ul>
+
+
+
+<p> paragraph
+
+<img src="" width="200" height="300" alt="error" title="title">
+
+
+<table border="2">
+	<tr>
+		<thead>제일 위표</thead>
+		<tbody>가운데</tbody>
+		<tfoot>마지막</tfoot>
+		<td>"그냥 나누기"</td>	<th>"이름을 진하게"</th>
+	</tr>
+</table>
+
+
+<form action="http://localhost/login.php"  method="post" enctype="multipart/form-data">
+    <p>아이디 : <input type="text" name="id" value="기본값"></p>
+    <p>비밀번호 : <input type="password" name="pwd"></p>
+    <p>주소 : <input type="text" name="address"></p>
+    <textarea cols="300" row="10"></textarea>
+    <input type="submit">
+</form>
+
+
+
+ <form action="http://localhost/color.php">
+            <h1>색상</h1>
+            <select name="color">
+                <option value="red">붉은색</option>
+                <option value="black">검은색</option>
+                <option value="blue">파란색</option>
+            </select>
+            <h1>색상2 (다중선택)</h1>
+            <select name="color2" multiple>
+                <option value="red">붉은색</option>
+                <option value="black">검은색</option>
+                <option value="blue">파란색</option>
+            <input type="hidden" name="hide" value="egoing"> // UI가 없지만 그냥 값을 주고싶을 때
+            </select>
+
+	       <input type="button" value="버튼" onclick="alert('hello world')">
+    	    <input type="reset">
+            <input type="submit">
+        </form>
+
+
+<label for="id_txt">text</label>:
+<input id="id_txt" type="text" name="id" value="normal">
